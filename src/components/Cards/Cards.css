@@ -1,0 +1,11 @@
+.cartas-container {
+  display: flex; /* Muestra los elementos en fila */
+  flex-wrap: wrap; /* Permite que se envuelvan en múltiples filas si no caben en el ancho de la pantalla */
+  justify-content: space-between;/* Espacio uniforme entre las cartas */
+  gap: 3px;
+}
+
+.cartas {
+  /* Estilos para cada carta si es necesario */
+  margin-bottom: -5px; /* Agrega un margen inferior para separar las cartas verticalmente */
+}

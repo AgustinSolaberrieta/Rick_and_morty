@@ -1,0 +1,58 @@
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    font-family: tt-ricks, serif;
+ }
+
+  form{
+    padding: 22px;
+    background-color: lightgrey; 
+    border-color: 10px;
+    border-radius:  28px; ;
+    box-shadow: 0 12px 35px ;
+    background-color: rgba(238, 233, 233, 0.586);
+   
+  }
+ .Pag-inicio{
+    
+  
+    color: #0291ff;
+    background-image: url('https://www.xtrafondos.com/wallpapers/rick-y-morty-escapando-de-portal-9235.jpg');
+ 
+    /* Establece que la imagen de fondo cubra todo el elemento */
+    background-size: cover;
+ 
+    /* Establece que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+ 
+    /* Centra la imagen de fondo horizontal y verticalmente */
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+  
+   
+   @media screen and (max-width: 600px){
+    background-image: url('https://w0.peakpx.com/wallpaper/320/744/HD-wallpaper-rick-and-morty-galaxy.jpg');
+   }
+   
+ 
+   
+ }
+ 
+ .custom-input {
+    color: #333333;
+    border: 3px solid #8707ff;
+    border-radius: 10px;
+    padding: 8px 19px;
+    background: transparent;
+    max-width: 180px;
+  }
+  
+  /* Estilos para los campos de entrada personalizados cuando están activos */
+  .custom-input:active {
+    box-shadow: 2px 2px 15px #07daff inset;
+  }
+
+  
