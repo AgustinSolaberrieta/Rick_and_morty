@@ -1,0 +1,100 @@
+.foto{
+  size: 50px;
+  height: 90px;
+}
+.myCard {
+  font-family: fantasy;
+  background-color: transparent;
+  width: 100px;
+  height: 254px;
+  perspective: 1000px;
+  position: absolute;
+  left: 50%; /* Centra horizontalmente en relación al contenedor */
+  top: 50%; /* Centra verticalmente en relación al contenedor */
+  transform: translate(-50%, -100%); /* Corrige el centrado */
+  /* Estilos para tu tarjeta */
+  width: 300px; /* Ancho de tu tarjeta */
+  height: 210px; /* Altura de tu tarjeta */
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: 90;
+  text-align: center;
+  margin: 5;
+}
+
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.myCard:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 110%;
+  height: 250%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  color: rgb(15, 4, 4);
+  box-shadow: 0 0 0.3em rgb(2, 3, 9);
+  font-weight: 700;
+}
+
+.frontSide,
+.frontSide::before {
+  background: linear-gradient(43deg, rgb(208, 20, 237) 0%, rgb(46, 5, 226) 46%, rgb(77, 252, 50) 100%);
+}
+
+.backSide,
+.backSide::before {
+  background-image: linear-gradient(160deg, #c020f5 0%, #56acf8 100%);
+}
+
+.backSide {
+  transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.backSide::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: ' ';
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1em;
+  filter: blur(20px);
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  9% {
+    opacity: 3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}

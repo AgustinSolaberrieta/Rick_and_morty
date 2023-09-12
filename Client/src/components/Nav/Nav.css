@@ -1,0 +1,80 @@
+
+
+
+.navBar {
+  margin-top: 19px;
+  width: 99.5%;
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos a la derecha */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 1px; /* Espaciado interior */
+   
+
+}
+
+/* Estilos para los botones en la barra de navegación */
+.navBar button {
+  background: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  backdrop-filter: blur(20px);
+  padding: 8px 3px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-left: 15px; /* Espaciado entre botones (ajusta según tus necesidades) */
+}
+
+.navBar button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navBar button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilo específico para el botón LOG OUT */
+.buttonContainer {
+
+  display: flex;
+  justify-content: auto; /* Centra los elementos horizontalmente */
+  gap: 10px;
+  height: 100%;
+  
+ 
+}
+
+.buttonContainer button {
+  background: #0b0b0b;
+  border: none;
+  padding: 1px 7px;
+  font-size: 17.1px;
+  font-weight: 600; /* Cambiado de 60 a 600 */
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  color: #e7e2e2; /* Cambiado de color para que sea visible */
+}
+
+.buttonContainer button:hover {
+  color: #fe48fe;
+}
+
+.buttonContainer button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(181, 37, 133);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.buttonContainer button:hover::before {
+  left: 0px;
+  right: 0px;
+  opacity: 1;
+}
