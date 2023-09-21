@@ -1,13 +1,15 @@
 .foto{
-  size: 50px;
-  height: 90px;
+ 
+  size: 70px;
+  height: 150px;
+  
 }
 .myCard {
   font-family: fantasy;
   background-color: transparent;
   width: 100px;
   height: 254px;
-  perspective: 1000px;
+  perspective: 20000px;
   position: absolute;
   left: 50%; /* Centra horizontalmente en relación al contenedor */
   top: 50%; /* Centra verticalmente en relación al contenedor */
@@ -19,9 +21,13 @@
 
 .title {
   font-size: 2.5em;
-  font-weight: 90;
+  font-weight: 90px;
   text-align: center;
-  margin: 5;
+  margin: 8px;
+}
+p{
+  color: aqua;
+  margin: -0px;
 }
 
 .innerCard {
@@ -51,9 +57,9 @@
   backface-visibility: hidden;
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 1rem;
-  color: rgb(15, 4, 4);
+  color: rgba(107, 105, 105, 0.721);
   box-shadow: 0 0 0.3em rgb(2, 3, 9);
-  font-weight: 700;
+  font-weight: 70px;
 }
 
 .frontSide,

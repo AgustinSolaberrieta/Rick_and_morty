@@ -1,49 +1,48 @@
 
 
-  .imagen {
-    opacity: 1; /* Establece la opacidad al 50%, lo que la hace parcialmente transparente */
-    width: 100px; /* Define el ancho deseado en píxeles */
-    height: 50px; /* Define el alto deseado en píxeles */
-  }
+.imagen {
+  opacity: 5; /* Establece la opacidad al 50%, lo que la hace parcialmente transparente */
+  width: 140px; /* Define el ancho deseado en píxeles */
+  height: 49px; /* Define el alto deseado en píxeles */
+}
 
 /* //BARRA DE NAVEGACION  */
 .inputBox_container {
-    position: fixed;
-    top: 4.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    max-width: 25.5em;
-    width: fit-content;
-    height: fit-content;
-    background-color: #000000;
-    border-radius: 60em;
-    overflow: hidden;
-  }
-  
-  .search_icon {
-    height: 3em;
-    padding: 0 0.5em 0 0.8em;
-    fill: #dc17b1;
-  }
-  /* para que el fondo sea trasparente del mismo color del buscador */
-  .inputBox {
-    background-color: transparent;
-    color: #22ed30;
-    
-    width: 110%;
-    border: 55px;
-    padding: 0.5em 0em 0.5em 1;
-    font-size: 1em;
-  }
-   /* de las letras del buscador */
-  ::placeholder {
-    color: rgb(128, 128, 128);
-  }
-  .btn{
-    color: #ce2cbb;
-    
-  }
+  position: fixed;
+  top: 4.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  max-width: 25.5em;
+  width: fit-content;
+  height: fit-content;
+  background-color: #000000;
+  border-radius: 60em;
+  overflow: hidden;
+}
 
+.search_icon {
+  height: 3em;
+  padding: 0 0.5em 0 0.8em;
+  fill: #dc17b1;
+}
+/* para que el fondo sea trasparente del mismo color del buscador */
+.inputBox {
+  background-color: transparent;
+  color: #e5eae5;
   
+  width: 110%;
+  border: 55px;
+  padding: 0.5em 0em 0.5em 1;
+  font-size: 1em;
+}
+ /* de las letras del buscador */
+::placeholder {
+  color: rgb(128, 128, 128);
+}
+.btno{
+  background-color: black;
+  color: #ce2cbb;
+  
+}

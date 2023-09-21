@@ -1,6 +1,4 @@
 
-
-
 .navBar {
   margin-top: 19px;
   width: 99.5%;
@@ -16,11 +14,11 @@
 .navBar button {
   background: transparent;
   border: 2px solid rgb(0, 0, 0);
-  backdrop-filter: blur(20px);
-  padding: 8px 3px;
+
+  padding: 12px 3px;
   border-radius: 10px;
   transition: background-color 0.3s;
-  margin-left: 15px; /* Espaciado entre botones (ajusta según tus necesidades) */
+  margin-left: 10px; /* Espaciado entre botones (ajusta según tus necesidades) */
 }
 
 .navBar button:hover {

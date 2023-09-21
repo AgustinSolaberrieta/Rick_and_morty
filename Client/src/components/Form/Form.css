@@ -1,25 +1,41 @@
+.logo{
+  align-self: flex-start;
+  height: 23vh;
+  width: 20%;
+  float: left;
+}
 .centrado {
     display: flex;
     justify-content: center;
     align-items: center; 
     height: 100vh;
+    padding-right: 300px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
 
+ h1{
+  font-style: initial;
+  font-size: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
   form{
-    padding: 22px;
-    background-color: lightgrey; 
+    padding: 28px;
+    background-color: rgba(30, 27, 27, 0); 
     border-color: 10px;
     border-radius:  28px; ;
     box-shadow: 0 12px 35px ;
-    background-color: rgba(238, 233, 233, 0.586);
+    background-color: rgba(6, 6, 6, 0.777);
    
   }
- .Pag-inicio{
+  label{
+    font-size:25px;
+    padding: 9px 8px;
     
+  }
+ .Pag-inicio{
   
-    color: #0291ff;
-    background-image: url('https://www.xtrafondos.com/wallpapers/rick-y-morty-escapando-de-portal-9235.jpg');
+    color: #4cff67;
+    background-image: url('C:\Users\USUARIO\OneDrive\Escritorio\rick_and_morty - copia\Client\src\components\Form\imagen.inicio.jpg');
  
     /* Establece que la imagen de fondo cubra todo el elemento */
     background-size: cover;
@@ -42,8 +58,8 @@
  }
  
  .custom-input {
-    color: #333333;
-    border: 3px solid #8707ff;
+    color: #fff7f7;
+    border: 1px solid #667b66;
     border-radius: 10px;
     padding: 8px 19px;
     background: transparent;
@@ -52,7 +68,50 @@
   
   /* Estilos para los campos de entrada personalizados cuando están activos */
   .custom-input:active {
-    box-shadow: 2px 2px 15px #07daff inset;
+    box-shadow: 2px 2px 15px #4a6053 inset;
   }
 
+  .btoninicial{
+  color: #000000;
+    background: #0b0b0b;
+    border-radius: 6px;
+    border: 0px solid transparent; /* Establece un borde transparente */
+    box-shadow: 0 0 10px rgba(236, 225, 225, 0.5); /* Agrega una sombra con brillo rojo */
+    transition: box-shadow 0.3s ease-in-out; 
+    padding: 10px 8px 9px 10px;
+    font-size: 17.1px;
+    font-weight: 550; /* Cambiado de 60 a 600 */
+    width: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(0deg);
+    color: #e7e2e2; /* Cambiado de color para que sea visible */
+   
+  }
+  
+  .btoninicial:hover {
+  color: #48fe82;
+  
+  }
+  
+  .btoninicial::before {
+  content: '';
+  border-radius: 6px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(37, 181, 59);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+ .btoninicial:hover::before {
+    left: 0px;
+    right: 0px;
+    opacity: 1;
+  }
+  
   

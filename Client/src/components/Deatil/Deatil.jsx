@@ -2,7 +2,7 @@ import './Deatil.css'
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import imagen from "./58f37731a4fa116215a92411.png"
+import imagen from "./imgdelacarta-removebg-preview.png"
 
 
 const Deatil = () => {
@@ -48,7 +48,7 @@ const Deatil = () => {
               <p><h2 className='p'>{character?.status}</h2></p>
               <p><h2 className='p'>{character?.species}</h2></p>
               <p><h2 className='p'>{character?.gender}</h2></p>
-              
+              <p><h2 className='p'>{character?.id}</h2></p>
           </div>
       </div>
   </div>

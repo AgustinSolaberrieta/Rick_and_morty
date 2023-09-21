@@ -13,7 +13,7 @@
 
 .cartas {
  
-  margin-top: -9px;
+  margin-top: 30px;
   /* Estilos para cada carta si es necesario */
-  margin-bottom: 1px; /* Agrega un margen inferior para separar las cartas verticalmente */
+  margin-bottom: -60px; /* Agrega un margen inferior para separar las cartas verticalmente */
 }

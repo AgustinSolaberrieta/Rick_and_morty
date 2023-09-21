@@ -1,6 +1,6 @@
 import "./SearchBar.css"
 import {useState} from "react";
-import rickvolando from './rick.webp';
+import rickvolando from './imag.png';
 // import miImagen from './58f37731a4fa116215a92411.png'
 
 export default function SearchBar({onSearch}) {
@@ -13,6 +13,7 @@ export default function SearchBar({onSearch}) {
    }
    return (
       <div className="inputBox_container">
+        
       <img src={rickvolando} alt=".." className="imagen" />
          
   <svg className="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
@@ -21,7 +22,7 @@ export default function SearchBar({onSearch}) {
   </svg>
   <input type='search' onChange={handleChange} value={id}
  className="inputBox" id="inputBox"  placeholder="Search for characters"/>
-   <button className="btn" onClick={() => onSearch(id)}>Agregar</button> 
+   <button className="btno" onClick={() => onSearch(id)}>Agregar</button> 
    
 </div>
 

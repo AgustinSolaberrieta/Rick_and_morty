@@ -40,18 +40,21 @@ function Card({id, name, status, species, gender, origin, image, onClose, addFav
         </button>
          
   <div>
-         <button className="like" onClick={handleFavorite}>{ isFav ? '❤️':'🤍'}</button>
+         
       
       
          <Link to={`/detail/${id}`}>
-         <h3 className="card-name">{name}</h3>
+         <h1 className="card-name">{name}</h1>
          </Link>
          <h2>{status}</h2>
          <h2 className='gender'>{species}</h2>
          
-         <h2 className='p'>{origin.name}</h2>
+         <h2 className='p'>{origin.name}</h2> 
+                 <img className="img" src={image} alt=''/>
        </div>
-         <img className="img" src={image} alt=''/> 
+
+         
+          <button className="like" onClick={handleFavorite}>{ isFav ? '❤️':'🤍'}</button>
        </div>
       
       </div>
