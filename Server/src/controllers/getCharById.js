@@ -1,5 +1,5 @@
 const  axios  = require("axios")
-const URL = "https://rickandmortyapi.com/api/character/"
+const URL = "https://rickandmortyapi.com/api/character/"                                                                                                                                                                                                                                                                                     
 
 
 const  getCharById = async (request, response)=>{
@@ -7,6 +7,7 @@ const  getCharById = async (request, response)=>{
     const { id } = request.params
 
     const { data } = await axios(`${URL}${id}`)
+   
 
     // let character = new Object;
    if(!data.name) throw new Error(`Faltan datos del personaje con Id: ${id}`)
@@ -33,5 +34,5 @@ const  getCharById = async (request, response)=>{
 
 } 
 
-module.exports = { getCharById };
+module.exports =  getCharById ;
 
